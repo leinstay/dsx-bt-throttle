@@ -1,0 +1,28 @@
+# Build output
+bin/
+build/
+
+# Compiler artifacts
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.dll
+*.exe
+
+# Logs
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+
+# Local tooling
+.claude/

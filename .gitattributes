@@ -1,0 +1,4 @@
+* text=auto
+*.bat text eol=crlf
+*.asm text eol=crlf
+*.def text eol=crlf
