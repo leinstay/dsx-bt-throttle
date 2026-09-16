@@ -2,7 +2,7 @@
 
 ## Setup
 
-1. `git clone --recursive <repo-url>`
+1. `git clone --recursive https://github.com/leinstay/dsx-bt-throttle.git`
 2. Visual Studio 2022+ with the C++ desktop workload
 3. `build.bat` builds everything and runs the tests
 

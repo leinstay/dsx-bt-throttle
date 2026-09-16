@@ -74,7 +74,7 @@ stats h=00000000000012A8: in=1231 (61/s) out=1 (0/s) dup=1229 delayed=0 err=0 cr
 Visual Studio 2022 or newer with the C++ desktop workload.
 
 ```bat
-git clone --recursive <repo-url>
+git clone --recursive https://github.com/leinstay/dsx-bt-throttle.git
 cd dsx-bt-throttle
 build.bat
 ```
