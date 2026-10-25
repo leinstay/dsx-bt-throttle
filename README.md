@@ -4,7 +4,7 @@ A patch for DSX that fixes Bluetooth headphones failing to connect or dropping o
 
 DSX writes an output report to the controller several hundred times per second whether or not anything changed. This DLL loads inside `DSX.exe`, drops the reports that repeat the previous one and spaces the rest at least 16 ms apart. Adaptive triggers, lightbar and rumble keep working; the radio gets its bandwidth back.
 
-## How It Works
+## How it works
 
 ```
 DSX.exe
@@ -39,7 +39,7 @@ copy bin\dsx_throttle.ini "C:\Program Files (x86)\Steam\steamapps\common\DSX\Mai
 
 If you prefer not to put files in the DSX folder: keep `dsx_throttle_injector.exe`, `dsx_throttle.dll` and `dsx_throttle.ini` together and run the injector. It asks for elevation (DSX runs elevated), finds the DSX process that has `HidSharp.dll` loaded, injects the DLL with `CreateRemoteThread` and tails the log. It re-scans every 5 s and re-injects when DSX restarts. Some antivirus products flag the injection pattern; the drop-in does not use it.
 
-## Checking That It Works
+## Checking that it works
 
 `dsx_throttle.log` appears next to the DLL:
 
@@ -84,7 +84,7 @@ build.bat
 ## Layout
 
 ```
-src/dll/throttle.*     CRC32, dedup, rate limit — no Win32, unit-tested
+src/dll/throttle.*     CRC32, dedup, rate limit, no Win32, unit-tested
 src/dll/hooks.*        MinHook hooks on kernelbase!WriteFile / CloseHandle
 src/dll/config.*       dsx_throttle.ini
 src/dll/log.*          file logger
@@ -95,6 +95,9 @@ src/tests/             unit tests and proxy smoke test
 third_party/minhook/   git submodule
 ```
 
-## License
+## License and credits
 
-MIT. Hooking by [MinHook](https://github.com/TsudaKageyu/minhook); report layout from [controllers.fandom.com](https://controllers.fandom.com/wiki/Sony_DualSense/Data_Structures).
+MIT License, see [LICENSE](LICENSE).
+
+* [MinHook](https://github.com/TsudaKageyu/minhook) by Tsuda Kageyu: BSD-2-Clause License
+* DualSense report layout from [controllers.fandom.com](https://controllers.fandom.com/wiki/Sony_DualSense/Data_Structures)
