@@ -97,7 +97,4 @@ third_party/minhook/   git submodule
 
 ## License and credits
 
-MIT License, see [LICENSE](LICENSE).
-
-* [MinHook](https://github.com/TsudaKageyu/minhook) by Tsuda Kageyu: BSD-2-Clause License
-* DualSense report layout from [controllers.fandom.com](https://controllers.fandom.com/wiki/Sony_DualSense/Data_Structures)
+MIT License, see [LICENSE](LICENSE). Hooking is done by [MinHook](https://github.com/TsudaKageyu/minhook) by Tsuda Kageyu (BSD-2-Clause). The DualSense report layout comes from [controllers.fandom.com](https://controllers.fandom.com/wiki/Sony_DualSense/Data_Structures).
